@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaalid | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 1.2s ease;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00e5ff;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+nav a:hover { color: #00e5ff; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 520px;
+  animation: fadeInLeft 1.5s ease;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text h2 span { color: #00e5ff; }
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #00e5ff;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,229,255,0.4);
+}
+
+.hero-img {
+  animation: fadeInRight 1.5s ease;
+}
+
+.hero-img img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00e5ff;
+  box-shadow: 0 0 40px rgba(0,229,255,0.4);
+}
+
+section {
+  padding: 70px 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #00e5ff;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.15);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #00e5ff;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.3);
+}
+
+footer a { color: #00e5ff; text-decoration: none; font-weight: 600; }
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .hero { justify-content: center; text-align: center; }
+  .hero-img { margin-top: 40px; }
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Khaalid</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <div class="hero">
+    <div class="hero-text">
+      <h2>Hi, I'm <span>Khaalid</span></h2>
+      <p>
+        I love learning how to code and creating beautiful graphic designs.
+        I enjoy building modern, animated websites and creative digital experiences.
+      </p>
+      <a class="btn" href="https://wa.me/656675463" target="_blank">Contact me on WhatsApp</a>
+    </div><div class="hero-img">
+  <!-- Replace profile.jpg with your own image file -->
+  <img src="c:\Users\Yahye\Music\WhatsApp Image 2026-01-20 at 2.01.44 PM.jpeg" alt="Khaalid Profile Image" />
+</div>
+
+  </div>  <section id="skills">
+    <h2 class="section-title">My Interests</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Learning Code</h3>
+        <p>I enjoy learning programming languages and building useful applications.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Creating responsive, animated, and modern websites.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>Designing clean and beautiful visuals with creativity.</p>
+      </div>
+    </div>
+  </section>  <footer id="contact">
+    <p>© 2026 Khaalid | Designed with ❤️</p>
+    <p>WhatsApp: <a href="https://wa.me/657878009" target="_blank">65 7878009</a></p>
+  </footer></body>
+</html>
